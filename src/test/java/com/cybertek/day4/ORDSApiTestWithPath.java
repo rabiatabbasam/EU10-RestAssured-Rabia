@@ -5,7 +5,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.w3c.dom.stylesheets.LinkStyle;
+
 
 import java.util.List;
 
@@ -79,6 +79,10 @@ public class ORDSApiTestWithPath extends HRTestBase {
                 assertEquals("IT_PROG",jobID);
 
             }
+
+            //TASK
+            //print each name of IT_PROGs
+
 
 
         }
