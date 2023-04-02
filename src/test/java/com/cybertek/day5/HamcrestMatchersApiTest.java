@@ -39,8 +39,8 @@ public class HamcrestMatchersApiTest {
                 .body("id",equalTo(15),
                         "name",is("Meta"),
                         "gender",is("Female"),
-                        "phone",is(1938695106))
-                .log().all();
+                        "phone",is(1938695106));
+
     }
 
 
@@ -65,6 +65,24 @@ public class HamcrestMatchersApiTest {
                 .body("teachers[0].firstName",is("dracool"))
                 .body("teachers[0].lastName",is("ronaldo"))
                 .body("teachers[0].gender",equalTo("Male"));
+
+    }
+
+    @DisplayName("GET request to teacher/all and chaining")
+    @Test
+    public void teachersTest(){
+
+        //verify Tet,Mario,Tory inside the all teachers
+        given()
+                .accept(ContentType.JSON)
+                .when()
+                        .get("https://api.training.cydeo.com/teacher/all")
+                .then()
+                .statusCode(200)
+                .and()
+                .body("teachers.firstName",hasItems("Tet","Mario","Tory"));
+
+
 
     }
 
