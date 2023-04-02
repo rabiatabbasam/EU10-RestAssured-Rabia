@@ -50,7 +50,11 @@
             <version>2.14.2</version>
         </dependency>
 
-
+        <dependency>
+            <groupId>com.oracle.ojdbc</groupId>
+            <artifactId>ojdbc10dms</artifactId>
+            <version>19.3.0.0</version>
+        </dependency>
     </dependencies>
 
 </project>
