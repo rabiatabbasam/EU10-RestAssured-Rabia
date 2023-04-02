@@ -26,7 +26,7 @@ public class HamcrestMatchersApiTest {
     @Test
     public void test1(){
 
-        given().
+        given().log().all().
                 accept(ContentType.JSON)
                 .and().pathParam("id",15)
                 .when()
@@ -39,7 +39,8 @@ public class HamcrestMatchersApiTest {
                 .body("id",equalTo(15),
                         "name",is("Meta"),
                         "gender",is("Female"),
-                        "phone",is(1938695106));
+                        "phone",is(1938695106))
+                .log().all();
 
     }
 
