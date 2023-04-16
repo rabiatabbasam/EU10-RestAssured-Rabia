@@ -1,6 +1,7 @@
 package com.cybertek.day12;
 
-import com.cydeo.utilities.*;
+
+import com.cybertek.utilities.BookitTestBase;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
