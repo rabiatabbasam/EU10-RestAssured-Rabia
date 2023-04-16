@@ -8,7 +8,10 @@ import org.junit.jupiter.api.Test;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+
 
 public class SpartanPatchRequestDemo extends SpartanTestBase {
 
