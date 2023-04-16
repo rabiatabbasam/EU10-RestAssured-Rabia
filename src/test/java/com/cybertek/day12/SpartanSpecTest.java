@@ -1,9 +1,10 @@
 package com.cybertek.day12;
 
-import com.cydeo.utilities.*;
+
+import com.cybertek.utilities.SpartanNewBase;
 import org.junit.jupiter.api.Test;
 
-import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.is;
 public class SpartanSpecTest extends SpartanNewBase {
 

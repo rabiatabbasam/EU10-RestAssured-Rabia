@@ -1,6 +1,7 @@
 package com.cybertek.day12;
 
-import com.cydeo.utilities.*;
+
+import com.cybertek.utilities.SpartanNewBase;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
 
